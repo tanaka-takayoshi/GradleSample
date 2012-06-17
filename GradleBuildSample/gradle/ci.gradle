@@ -1,9 +1,9 @@
+defaultTasks 'clean', 'build'
+
 apply plugin: 'java'
 
-defaultTasks 'clean', 'something', 'build'
-
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.0-milestone-1'
+    gradleVersion = '1.0-milestone-7'
 }
 
 repositories {
