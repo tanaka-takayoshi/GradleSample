@@ -1,18 +1,12 @@
+defaultTasks 'clean', 'build'
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.0-milestone-1'
+    gradleVersion = '1.0-milestone-7'
 }
 
 repositories {
     mavenCentral()
-}
-
-dependencies {
-    compile 'commons-lang:commons-lang:2.6'
-}
-
-eclipse {
-    pathVariables 'GRADLE_USER_HOME': gradle.gradleUserHomeDir
 }
